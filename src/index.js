@@ -17,7 +17,6 @@ const buttonStop = document.querySelector('button[data-action="stop"]');
 let intervalId;
 
 buttonStart.addEventListener('click', () => {
-
   intervalId = setInterval(() => {
     const randomColor = colors[randomIntegerFromInterval(0, colors.length-1)];
     body.style.backgroundColor = randomColor;
